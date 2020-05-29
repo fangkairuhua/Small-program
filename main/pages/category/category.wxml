@@ -1,0 +1,26 @@
+<!--pages/activity/activity.wxml-->
+<scroll-view class="categoryitem" scroll-y="true" style="height:{{scrollHeigth}}px;">
+  <view class="item" style="min-height:{{scrollHeigth}}px;">
+    <view wx:for="{{navigation}}" class="{{imgsid == item.id ?'con':''}}" data-id="{{index}}" bindtap="onclick" wx:key="index">
+      {{item.name}}
+    </view>
+  </view>
+</scroll-view>
+
+
+
+
+<scroll-view class="contentItem " scroll-y="true " style="height:{{scrollHeigth}}px; " bindscroll="onhua" scroll-top="{{boxheight}}">
+  <view style="min-height:{{scrollHeigth}}px; " class="content">
+    <view class="second-sub-category clearfix ul">
+      <view class="a">
+        <view class="category-item li" wx:for="{{imgs[imgsid].imgss}}">
+          <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+            <image class="imgsbox category-item-logo lazyload-img fn-lazyload-visible" mode="widthFix" src="{{item}}"></image>
+            <text class="category-item-title">CLARINS </text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,160 @@
+/* 样式不需要引入 */
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+.navlunbo {
+  width: 100%;
+  height: 100%;
+}
+
+.navlunbo image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 分类 */
+
+.category {
+  box-sizing: border-box;
+  width: 100%;
+  /* padding: 0.25rem; */
+  height: 11.84rem;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.category .item {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.icon_warp {
+  overflow: hidden;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icon_warp image {
+  width: 2.96rem;
+  height: 2.96rem;
+  border-radius: 50%;
+}
+
+.icon_warp text {
+  display: block;
+  margin-top: 0.14rem;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* 商品列表 */
+
+.index-choice {
+  background: #fff;
+  margin-top: 0.2rem;
+  padding-left: 1px;
+  position: relative;
+}
+
+.common_title {
+  margin-top: 0.5rem;
+  font-family: PingFangSC-Medium;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.index-choice .hot-list {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.product-item {
+  box-sizing: border-box;
+  margin-bottom: 5.2rem;
+  /* margin-left: 0.2rem; */
+  width: 50%;
+  float: left;
+  height: 11.5rem;
+  /* text-align: center; */
+  position: relative;
+  padding: 0 0.5rem;
+  border: none;
+}
+
+.a {
+  width: 100%;
+  height: 100%;
+}
+
+.a image {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 2rem auto 0;
+  float: none;
+}
+
+.base-font {
+  color: #212121;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 8px;
+  line-height: 1rem;
+  overflow: hidden;
+}
+
+.price-now {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px;
+  text-align: left;
+}
+
+.price-rmb-wrap {
+  text-align: left;
+  padding: 8px;
+  font-size: 0.8rem;
+  color: #999;
+  /* margin-top: 0.5rem; */
+}
+
+.cart image {
+  position: absolute;
+  bottom: -2.3rem;
+  right: 2rem;
+  width: 1.4rem;
+  height: 1.39rem;
+  border: none;
+}
+
+.huodong {
+  background: #fff;
+  padding: 0.5rem 0;
+  margin-top: 0.2rem;
+  height: 5.7rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 1rem;
+  color: #333;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  text-align: center;
+}

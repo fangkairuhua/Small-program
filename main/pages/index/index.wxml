@@ -1,0 +1,56 @@
+<view class="main">
+  <!--index.wxml-->
+  <!-- 轮播图 -->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="red" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgs}}" wx:key="*this">
+        <swiper-item>
+          <view class="navlunbo">
+            <image src="{{item}}"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 轮播图 end -->
+
+  <!-- 分类 -->
+  <view class="category clearfix">
+    <view class="item" wx:for="{{iconArray}}" wx:key="*this" bindtap="getCategory" data-id="{{item.id}}">
+      <view class="icon_warp">
+        <image src="{{item.iconUrl}}"></image>
+        <text>{{item.iconText}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 分类 -->
+
+  <!-- 商品列表 -->
+  <view class="index-choice clearfix">
+    <view class="common_title">
+      <text>热卖排行榜</text>
+    </view>
+
+    <view class=" hot-list active">
+      <view class="ajax-product-item product-item" wx:for="{{goodsList}}" wx:key="*this">
+
+        <view class="a">
+          <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+            <image src="{{item.goodsImage}}"></image>
+          </navigator>
+          <text class="base-font"> {{item.goodsName}} </text>
+          <view class="price-now">${{item.goodsAddress}}</view>
+          <view class="price-rmb-wrap">{{item.goodsPrice}}</view>
+        </view>
+
+        <view class="cart">
+          <image src="../../image/car.png"></image>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 商品列表 -->
+
+ 
+</view>
